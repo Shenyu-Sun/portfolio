@@ -24,6 +24,8 @@ a{
 }
 
 .coverimg{
+    width: 100%;
+    height: auto;
     max-width: 540px;
 }
 h1{
