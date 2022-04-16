@@ -1,0 +1,53 @@
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flex;
+  }
+
+li{
+    text-decoration: none;
+}
+a{
+    padding: 20px;
+}
+
+
+.projectdiv{
+    display: flex;
+}
+
+.coverimg{
+    max-width: 540px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+}
+
+h6{
+   font-family: 'Poppins', sans-serif;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.divskill{
+    display: flex;
+}
+.skilllist{
+display: list-item;
+}
+
+.shenyu_photo{
+    max-width: 100px;
+}
+
