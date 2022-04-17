@@ -1,0 +1,130 @@
+/*
+Colors used:
+Primary Color (Blue): #05676e;
+Secondary Color (Pink): #fbf2ef;
+#EFBFBB
+*/
+
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0%;
+  }
+
+
+
+header,.hero,footer{
+  padding-left:15%;
+  padding-right:15%;
+  background-color: #121212;
+}
+
+.hero{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.divproject{
+  margin-left:15%;
+  margin-right:15%;
+}
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    color: #FAFAFA;
+    font-size: 2.55em;
+    font-weight: 500;
+  }
+  
+  .h1italic{
+    color: #121212;
+    font-weight: 500;
+    font-style: italic;
+    background-color: #fbf2ef;
+  }
+
+  .h1italic:hover{
+    text-decoration: underline;
+  }
+  
+  .h1underline{
+      text-decoration:underline;
+      text-decoration-color:#EFBFBB;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  .texttag{
+    font-size: 0.75em;
+    font-family: "office code pro";
+    color: #fbf2ef;
+    font-weight: 400;
+ }
+
+.section_hi{
+    background-color: #121212;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flex;
+  }
+
+li{
+    text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+.projectdiv{
+    display: flex;
+}
+
+.coverimg{
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.divskill{
+    display: flex;
+}
+.skilllist{
+display: list-item;
+}
+
+.shenyu_photo{
+    max-width: 100px;
+}
+
