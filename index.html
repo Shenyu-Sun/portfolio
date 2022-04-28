@@ -16,17 +16,13 @@
 <body>
     <header>
 		<!-- For the navigation -->
-			<nav>
-				<ul>
-			    <li><a href="index.html"><h6>Project</h6></a></li>
-				<li><a href="about.html"><h6>About</h6></a></li>
-				<li><a href="https://drive.google.com/file/d/1bIRHNskzOvIz8Q3-1Ew3O48NhiyVl22i/view?usp=sharing" target="_blank"><h6>Résumé</h6></a></li>
+				<ul class="nav">
+			    <li><a href="index.html" class="navibutton"><h6>Project</h6></a></li>
+				<li><a href="about.html" class="navibutton"><h6>About</h6></a></li>
+				<li><a href="https://drive.google.com/file/d/1bIRHNskzOvIz8Q3-1Ew3O48NhiyVl22i/view?usp=sharing" target="_blank" class="navibutton"><h6>Résumé</h6></a></li>
 				</ul>
-			</nav>
 	</header>
-
 	<main>
-
 	<!-- For the hero section -->
 	<div class="hero">
 		<div><h1>Hi. <br/>This is <span class="h1italic"><a href="about.html">Shenyu</a></span>, an avid <span class="h1underline"> problem solver </span>fascinated by bridging <span class="h1underline">users</span> with <span class="h1underline">products</span>.</h1></div>
@@ -37,12 +33,16 @@
 	<!-- For my work/projects -->
     <div class="divproject">
 	<div>
-		<img class='coverimg' src="img/lumi/lumi_coverx2.png" alt="lumipay cover image">
-		<div> <h6>Lumipay</h6> </div> <div><h6>UX/UI</h6></div>
+		<picture>
+			<img class='coverimg' src="img/lumi/lumi_coverx2.png" alt="lumipay cover image">
+		</picture>
+		<div> <h6><a href="lumipay.html">Lumipay</a></h6> </div> <div><h6>UX/UI</h6></div>
 		<div><p>A safe, fast and neat way to organise money related trivial for young people.</p></div>
 	</div>
 	<div>
-		<img class='coverimg' src="img/talo/talo_coverx2.png" alt="talo cover image">
+		<picture>
+			<img class='coverimg' src="img/talo/talo_coverx2.png" alt="talo cover image">
+		</picture>
 		<div><h6>Talo</h6></div> <div><h6>UX/UI</h6></div>
 		<div><p>A desktop application for team managers to allocate tasks efficiently.</p></div>
 	</div>

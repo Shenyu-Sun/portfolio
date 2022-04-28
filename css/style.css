@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Blue): #05676e;
+Primary Color (White): #ffffff;
 Secondary Color (Pink): #fbf2ef;
 #EFBFBB
 */
@@ -10,7 +10,7 @@ body {
     background-color: #FAFAFA;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0%;
   }
 
@@ -32,7 +32,13 @@ header,.hero,footer{
   margin-right:15%;
 }
 
-  h1, h2, h3, h4 {
+.divcontent{
+  margin-left:25%;
+  margin-right:25%;
+  background-color: #FAFAFA;
+}
+
+  h1, h2, h3, h4, h5{
     line-height: 1.4;
   }
 
@@ -59,30 +65,48 @@ header,.hero,footer{
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 2em;
     font-weight: 700;
   }
   
   h3 {
-    font-size: 1.75em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 600;
   }
   h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+    font-size: 1em;
+    font-weight: 500;
   }
+
+  h5{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "office code pro";
+  }
+
+  h6{
+    font-size: 0.75em;
+    font-weight: 400;
+    font-family: "office code pro";
+    line-height: 1;
+  }
+
+
   .texttag{
     font-size: 0.75em;
     font-family: "office code pro";
     color: #fbf2ef;
     font-weight: 400;
  }
+  p{
+    font-size: 0.95em;
+  }
 
 .section_hi{
     background-color: #121212;
 }
 
-nav{
+.nav{
     display:flex;
     justify-content: flex-end;
 }
@@ -91,19 +115,25 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display:flex;
+
   }
 
 li{
     text-decoration: none;
+    display: block;
 }
 a{
   text-decoration: none;
 }
 
+.navibutton{ 
+  display: inline-block;
+  color:darkgray;
+  padding: 10px;
+}
 
-.projectdiv{
-    display: flex;
+.navibutton:hover{ 
+  color: #ffffff;
 }
 
 .coverimg{
@@ -111,6 +141,14 @@ a{
     height: auto;
     max-width: 540px;
 }
+
+.img1{
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+
 footer{
     display: flex;
     justify-content:space-between;
