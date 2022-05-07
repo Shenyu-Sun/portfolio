@@ -1,10 +1,13 @@
 /*
 Colors used:
-Primary Color (White): #ffffff;
+Primary Color (Lightgrey): #fafafa; (Black): #121212;
 Secondary Color (Pink): #fbf2ef;
 #EFBFBB
 */
 
+* {
+  box-sizing: border-box;
+}
 
 body {
     background-color: #FAFAFA;
@@ -14,25 +17,47 @@ body {
     margin: 0%;
   }
 
-
-
-header,.hero,footer{
-  padding-left:15%;
-  padding-right:15%;
-  background-color: #121212;
+header, footer, #hero, #projects{
+  padding-left:10%;
+  padding-right:10%;
+}
+header{
+  background: linear-gradient(180deg, #FBF2EF 0%, #FAFAFA 100%);
+  position: fixed;
+  width: 100%;
 }
 
-.hero{
-  padding-top: 5%;
+footer{
+  padding-top: 10%;
+  background: linear-gradient(180deg, #FAFAFA 0%, #FBF2EF 100%);
+}
+
+#hero{
+  padding-top: 10%;
+  display: inline-block;
+}
+
+
+
+#projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1em;
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
-.divproject{
-  margin-left:15%;
-  margin-right:15%;
+#about, #skill{
+  padding-top: 10%;
+  margin-left:25%;
+  margin-right:25%;
 }
 
-.divcontent{
+.divoneproject{
+  display: inline-block;
+}
+
+#projectContent{
   margin-left:25%;
   margin-right:25%;
   background-color: #FAFAFA;
@@ -43,13 +68,13 @@ header,.hero,footer{
   }
 
   h1 {
-    color: #FAFAFA;
-    font-size: 2.55em;
+    color: black;
+    font-size: 2.2em;
     font-weight: 500;
   }
   
   .h1italic{
-    color: #121212;
+    color: black;
     font-weight: 500;
     font-style: italic;
     background-color: #fbf2ef;
@@ -95,7 +120,6 @@ header,.hero,footer{
   .texttag{
     font-size: 0.75em;
     font-family: "office code pro";
-    color: #fbf2ef;
     font-weight: 400;
  }
   p{
@@ -128,26 +152,23 @@ a{
 
 .navibutton{ 
   display: inline-block;
-  color:darkgray;
+  color:black;
   padding: 10px;
 }
 
 .navibutton:hover{ 
-  color: #ffffff;
+  color: darkgray;
 }
 
 .coverimg{
     width: 100%;
     height: auto;
-    max-width: 540px;
 }
 
 .img1{
   width: 100%;
   height: auto;
-  max-width: 800px;
 }
-
 
 footer{
     display: flex;
@@ -155,7 +176,7 @@ footer{
 }
 
 
-.divskill{
+#skill{
     display: flex;
 }
 .skilllist{
@@ -165,4 +186,3 @@ display: list-item;
 .shenyu_photo{
     max-width: 100px;
 }
-
