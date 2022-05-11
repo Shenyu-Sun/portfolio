@@ -25,8 +25,9 @@
 	<main>
 	<!-- For the hero section -->
 	<div id="hero">
-		<div><h1>Hi. <br/>This is <span class="h1italic"><a href="about.html">Shenyu</a></span>, an avid <span class="h1underline"> problem solver </span>fascinated by bridging <span class="h1underline">users</span> with <span class="h1underline">products</span>.</h1></div>
-        <div><p class="texttag">Scroll to explore<p></div>
+		<span class="circle"></span>
+		<div class="divshortIntro"><h1>Hi. <br/>This is <span class="h1italic"><a href="about.html">Shenyu</a></span>, an avid <span class="h1underline"> problem solver </span>fascinated by bridging <span class="h1underline">users</span> with <span class="h1underline">products</span>.</h1></div>
+        <div class="button"> <a href="#projects" class="texttag">Explore the projects</a> </div>
 	</div>
 
 
@@ -35,18 +36,26 @@
     <div id="projects">
 
 	<div class="divoneproject">
-		<picture>
-			<img class='coverimg' src="img/lumi/lumi_coverx2.png" alt="lumipay cover image">
-		</picture>
-		<div> <h6><a href="lumipay.html">Lumipay</a></h6> </div> <div><h6>UX/UI</h6></div>
+		<a href="lumipay.html">
+			<picture>
+				<img class='coverimg' src="img/lumi/lumi_coverx2.png" alt="lumipay cover image">
+			</picture>
+		</a>
+
+		<div class="projecttag">
+			<div> <h6><a href="lumipay.html">Lumipay</a></h6> </div> <div><h6>UX/UI</h6></div>
+		</div>
 		<div><p>A safe, fast and neat way to organise money related trivial for young people.</p></div>
 	</div>
 	<div class="divoneproject">
 		<picture>
 			<img class='coverimg' src="img/talo/talo_coverx2.png" alt="talo cover image">
 		</picture>
-		<div><h6>Talo</h6></div> <div><h6>UX/UI</h6></div>
+		<div class="projecttag">
+			<div><h6>Talo</h6></div> <div><h6>UX/UI</h6></div>
+		</div>
 		<div><p>A desktop application for team managers to allocate tasks efficiently.</p></div>
+		
 	</div>
     </div>
 
@@ -54,12 +63,12 @@
 	</main>
 
 	<!-- For the footer  -->
-	<footer id="contact">
+	<footer id="footer">
 		<div> <p class="texttag">Portfolio website 2.0<br/>@ Design and code by Shenyu Sun 2022 </p> </div>
 		<div> <p class="texttag">shenyu.sun@aalto.fi<br/> <a href="tel:+358466155555">+358 466155555 </a> </p> </div>
-		<a href="https://www.linkedin.com/in/shenyu-sun" target="_blank"><p class="texttag">LinkedIn</p></a>
+		<div> <a href="https://www.linkedin.com/in/shenyu-sun" target="_blank"><p class="texttag">LinkedIn</p></a></div>
 	</footer>
-	
+    
     
 </body>
 </html>

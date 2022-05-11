@@ -9,6 +9,10 @@ Secondary Color (Pink): #fbf2ef;
   box-sizing: border-box;
 }
 
+a:visited{
+  color: black;
+}
+
 body {
     background-color: #FAFAFA;
     font-family: 'Poppins', sans-serif;
@@ -35,29 +39,66 @@ footer{
 #hero{
   padding-top: 10%;
   display: inline-block;
+  justify-content: center;
 }
 
+.circle{
+  height: 100px;
+  width: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #EFBFBB 9.9%, rgba(250, 250, 250, 0) 100%);
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.2s;
+}
 
+.circle:hover{
+  border: 1px solid black;
+  background: #fafafa;
+  
+}
+
+@keyframes circle-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,100px);}
+}
+
+.circle {
+  animation-duration: 30s;
+  animation-name: circle-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:linear;
+}
 
 #projects{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
   padding-top: 10%;
   padding-bottom: 5%;
 }
 
-#about, #skill{
+.divshortIntro{
   padding-top: 10%;
-  margin-left:25%;
-  margin-right:25%;
 }
 
+.button{
+  display: inline-block;
+  padding: 0.3em;
+  border: 1px solid #191919;
+  border-radius: 100px;
+  line-height: 1;
+  text-transform: uppercase;
+}
 .divoneproject{
   display: inline-block;
 }
-
+.projecttag{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
 #projectContent{
+  padding-top: 10%;
   margin-left:25%;
   margin-right:25%;
   background-color: #FAFAFA;
@@ -78,6 +119,7 @@ footer{
     font-weight: 500;
     font-style: italic;
     background-color: #fbf2ef;
+    transition-delay: 200ms;
   }
 
   .h1italic:hover{
@@ -110,25 +152,20 @@ footer{
   }
 
   h6{
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 400;
     font-family: "office code pro";
-    line-height: 1;
   }
 
-
   .texttag{
-    font-size: 0.75em;
+    font-size: 1em;
     font-family: "office code pro";
     font-weight: 400;
  }
   p{
-    font-size: 0.95em;
+    font-size: 1em;
   }
 
-.section_hi{
-    background-color: #121212;
-}
 
 .nav{
     display:flex;
@@ -150,39 +187,127 @@ a{
   text-decoration: none;
 }
 
-.navibutton{ 
+.navibutton { 
   display: inline-block;
   color:black;
-  padding: 10px;
+  padding-left: 20px;
 }
 
 .navibutton:hover{ 
   color: darkgray;
+  transition: 0.2s;
 }
+
 
 .coverimg{
     width: 100%;
     height: auto;
+    transition: 0.3s;
+    padding-top: 10%;
 }
+
+.coverimg:hover{
+  filter: brightness(80%);
+}
+
 
 .img1{
   width: 100%;
   height: auto;
 }
 
-footer{
-    display: flex;
-    justify-content:space-between;
+/* ==============================
+ For the about page 
+ ==============================*/
+ #about, #skill{
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
+#about{padding-top: 40%;}
 
 #skill{
-    display: flex;
-}
-.skilllist{
-display: list-item;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.shenyu_photo{
-    max-width: 100px;
+.skilllist{ 
+  display: list-item; 
 }
+  
+.shenyu_photo{
+  max-width: 100px;
+}
+
+
+
+/* ==============================
+ For the footer
+ ==============================*/
+footer{
+  display: block;
+  padding-top: 10%;
+  
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  #projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-column-gap: 2em;
+  }
+
+  #about{
+    padding-top: 10%;
+  }
+
+  #skill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  #about,#skill{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  #header, #hero, #projects {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+
+}
+
