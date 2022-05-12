@@ -9,6 +9,10 @@ Secondary Color (Pink): #fbf2ef;
   box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a:visited{
   color: black;
 }
@@ -28,7 +32,9 @@ header, footer, #hero, #projects{
 header{
   background: linear-gradient(180deg, #FBF2EF 0%, #FAFAFA 100%);
   position: fixed;
+  
   width: 100%;
+  z-index: 1;
 }
 
 footer{
@@ -208,6 +214,7 @@ a{
 
 .coverimg:hover{
   filter: brightness(80%);
+  
 }
 
 
@@ -275,6 +282,7 @@ Medium devices (640px and larger)
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
+
   }
 
 }
