@@ -161,6 +161,7 @@ footer{
     font-size: 1em;
     font-weight: 400;
     font-family: "office code pro";
+    margin-top: auto;
   }
 
   .texttag{
@@ -173,10 +174,28 @@ footer{
   }
 
 
-.nav{
+nav{
     display:flex;
     justify-content: flex-end;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -189,14 +208,16 @@ li{
     text-decoration: none;
     display: block;
 }
+
 a{
   text-decoration: none;
 }
 
-.navibutton { 
+.navibutton, .icon { 
   display: inline-block;
   color:black;
   padding-left: 20px;
+  margin-top: 30px;
 }
 
 .navibutton:hover{ 
@@ -248,6 +269,7 @@ a{
 
 
 
+
 /* ==============================
  For the footer
  ==============================*/
@@ -282,7 +304,14 @@ Medium devices (640px and larger)
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
+  }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
 }

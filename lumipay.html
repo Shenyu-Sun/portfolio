@@ -11,16 +11,20 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e545878d21.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
 		<!-- For the navigation -->
+				<div class="navtoggle" id="myNavtoggle">
 				<ul class="nav">
 			    <li><a href="index.html" class="navibutton"><h6>Project</h6></a></li>
 				<li><a href="about.html" class="navibutton"><h6>About</h6></a></li>
 				<li><a href="https://drive.google.com/file/d/1bIRHNskzOvIz8Q3-1Ew3O48NhiyVl22i/view?usp=sharing" target="_blank" class="navibutton"><h6>Résumé</h6></a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
+ 				</div>
 	</header>
     <main>
     <div id="projectContent">
@@ -168,6 +172,7 @@
 		<div> <a href="https://www.linkedin.com/in/shenyu-sun" target="_blank"><p class="texttag">LinkedIn</p></a></div>
 	</footer>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
