@@ -13,9 +13,14 @@ html {
 	scroll-behavior: smooth;
 }
 
-a:visited{
+a, a:visited, span:visited, .texttag:visited{
   color: black;
 }
+
+
+
+
+
 
 body {
     background-color: #FAFAFA;
@@ -90,7 +95,7 @@ footer{
 .button{
   display: inline-block;
   padding: 0.3em;
-  border: 1px solid #191919;
+  border: 1px solid #000000;
   border-radius: 100px;
   line-height: 1;
   text-transform: uppercase;
