@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Shenyu Sun</title>
+    <title>Lumipay</title>
 	<link rel="shortcut icon" type="image/png" href="img/fav/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -39,16 +39,30 @@
     <main>
     <div id="projectContent">
         <h2>Lumipay: A safe, fast and neat way to organise money related trivial for young people.</h2>
+        
+        <div class="ContentBlock">
         <h5>00. Overview</h5>
+        <h3>Introduction</h3>
+        <p>Lumipay is an app makes payment easy and handy for young poeple. The multifunctional app help users with transferring money, tracking spendings and collecting cards.</p>
+        <h3>Role</h3>
+        <p>My responsibilities includeed User research, Ideating concepts, Wireframing, Prototyping, Testing, Iterating on feedback delivering final designs.</p>
+        <h3>Methods Used</h3>
+        <p>
+            User interview, User Persona, Problem Statement, Sketching & Desig, Prototyping, Moderated usability testing
+        </p>
+    </div>
+    
+        
+        <!-- For the research part -->
+        <div class="ContentBlock">
+        <h5>01. Research</h5>
         <h3>How does it start? A payment app contains everything?</h3>
      
         <p>As a college student, I've noticed that many of my peers complain about trivial things regarding money. The one I hear the most was “why can't we have an app that contains everything so that I don't have to use separate tools to do money related things”
             This problem got me thinking, so I decided to explore what is "everything" and how we tackle it.</p>
         
-        <!-- For the research part -->
-        <h5>01. Research</h5>
         <h3>How do young people use payment app?</h3>
-        <p>I conducted a User interview + User survey, in order to</p>
+        <p>I conducted a <b>User interview + User survey</b>, in order to</p>
       
             <ul>
             <li>01. To better understand user behaviour around the activity of transferring and paying</li> 
@@ -56,68 +70,108 @@
             <li>03. Documenting user pain points with existing mobile payment app on the market</li>
             </ul>
 
-            <p>Participants  4+28 are involved</p>
-
-            <ul>
-            <li>4 user interviews were conducted among young people (from age 21-30)</li> 
-            <li>28 responses were received in the user survey in total</li> 
-            </ul>
-             
+            <p><b> 32 (4+28) Participants are involved</b>
+            4 user interviews were conducted among young people (from age 21-30)
+            28 responses were received in the user survey in total
+            </p>
+            <picture>
+                <img class="img1" src="img/lumi/UserResearch.png" alt="UserResearch">
+            </picture>
             <p>In order to identify user insights and I used Affinity Mapping for grouping and understanding information.</p>
+            
+            <picture>
+                <img class="img1" src="img/lumi/AffinityMap.png" alt="AffinityMap">
+            </picture>
+
+
             <h3>Insights. Everything and more</h3>
             <p>I've found that students are looking for more than just a multi-functional payment app. They are also very concerned about other aspects.</p>
-            <ul>
-                <li>01. Pay, but not only pay 
-                    People want payment apps to be multi-functional. In addition to payment and money transfer functions, other features such as collecting tickets, recording and categorising the spendings also important for them.
-                </li>
-                <li>02. Safe first
-                    Users place a high priority on security. They believe that a combination of different methods of security verification will better protect their accounts.
-                </li>
-                <li>03. Smooth onboarding
-                    People are frustrated when they found the onboarding process is not instructive enough and collect information without a reason.
-                </li>
-                <li>04. Simple and intuitive
-                    The prefer clean and neat interfaces with necessary function over crowded new features.
-                </li>
-                </ul>
-        
+            
+            <div id="TwoCol">
+                <div>
+                    <b>Pay, but not only pay</b> <br>
+                    <p>People want payment apps to be multi-functional. In addition to money transfer functions, other features such as collecting tickets, recording and categorising the spendings also important for them.
+                    </p>     
+                </div>
+                <div>
+                    <b>Safety first</b> <br>
+                    <p>Users place a high priority on security. They believe that a combination of different methods of security verification will better protect their accounts.
+                    </p>
+                </div>
+                <div>
+                    <b>Smooth onboarding</b> <br>
+                    <p>People are frustrated when they found the onboarding process is not instructive enough and collect information without a reason.
+                    </p>
+                </div> 
+                <div>
+                    <b>Simple and intuitive</b> <br>
+                    <p>The prefer clean and neat interfaces with necessary functions over crowded new features.
+                    </p>
+                </div> 
+            </div>
+
+
+        </div>
+
          <!-- For the define part -->
         <h5>02. Define</h5> 
-        <h3>Feature prioritisation MVP</h3>
+        <h3>Core user goals</h3>
         <p>
-            Based on the insights I get from the interviews and survey, I identified the features that I will incorporate in the app.
+            Based on the pain points I get from the interviews and survey, I identified the core user goals.
+           <b>Pain points → User goal</b>
         </p>
-            <h4>Pay, but not only pay</h4>
-                <ul>
-                <li>01. Transfer to bank and mobile</li>
-                <li>02. Track spendings and history payments</li>
-                <li>03. Collect bank cards</li>
-                </ul>
-            <h4>Safe first</h4>
-                <ul>
-                <li>04. Two factor authentication</li>
-                </ul>
-            <h4>Smooth onboarding</h4>
-                <ul><li> 05. Informative and clear onboarding screens</li></ul>
-           
-        <h3>User flow - What steps user need to take to accomplish the goal?</h3>
+
+        <p>Overwhelming with crowded unnecessary features 
+            <br>→ I need a well organized screen with only necessary functions.</p>
+        <p>Not instructive and informative onboarding 
+            <br>→ I can easily understand what the app can do and why it collects certain information</p>
+        <p>Worry about the security issues 
+            <br>→ I can trust the app and I feel safe everytime I use</p>
+
         
+        <h3>Scope and features</h3>
+        <h4>Multifunctional & Neat</h4>
+        <p>
+            <ul>
+                A way to handle all necessary money related things. 
+                A simple, intuitive and well-organized interface
+                → 
+                <li>&nbsp;&nbsp;&nbsp;01. Transfer to bank and mobile (scan and mobile transfer)</li>
+                <li>&nbsp;&nbsp;&nbsp;02. Track spendings and history payments            </li>
+                <li>&nbsp;&nbsp;&nbsp;03. Collect bank cards, tickets and loyalty cards</li>
+            </ul>
+        </p>
+
+        <h4>Smooth & Safe</h4>
+        <p>
+            <ul>
+                A safe way to deal with money things
+                easy to get started the first time using the app
+                → 
+                <li>&nbsp;&nbsp;&nbsp;04. Two factor authentication</li>
+                <li>&nbsp;&nbsp;&nbsp;05. Informative and clear onboarding screens</li>
+            </ul>
+        </p>
+
+
         <!-- For the design part -->
-        <h5>03. Design</h5> 
-        <h3>Sketches and iterations</h3>
-        <p>In order quickly document my ideas and draft my concept. I used paper and pen to make sketches to move forward.</p>
-        <picture>
-            <img class="img1" src="img/lumi/Sketch.png" alt="sketch">
-        </picture>
+        <div class="ContentBlock">
+            <h5>03. Design</h5> 
+            <h3>Sketches and iterations</h3>
+            <p>In order quickly document my ideas and draft my concept. I used paper and pen to make sketches to move forward.</p>
+            <picture>
+                <img class="img1" src="img/lumi/Sketch.png" alt="sketch">
+            </picture>
 
-        <h3>High Fidelity prototype</h3>
-        <p>After 5-6 times iterations of sketch, I turned them into aclickable prototype in order to conduct usability testing.</p>
-        <picture>
-            <img class="img1" src="img/lumi/hifiScreenshot.png" alt="hi-fi screenshots">
-        </picture>
-
+            <h3>High Fidelity prototype</h3>
+            <p>After 5-6 times iterations of sketch, I turned them into aclickable prototype in order to conduct usability testing.</p>
+            <picture>
+                <img class="img1" src="img/lumi/hifiScreenshot.png" alt="hi-fi screenshots">
+            </picture>
+        </div>
         
         <!-- For the testing part -->
+        <div class="ContentBlock">
         <h5>04. Testing</h5>
         <h3>Prototype, test, and repeat</h3>
         <p>Moderated in-person testings were taken. The tests included a short briefing, task performance with Lumi Pay conducted on a mobile app, and a debriefing.</p>
@@ -141,8 +195,9 @@
         <picture>
                 <img class="img1" src="img/lumi/rainbowSheetTestResults.png" alt="test results">
         </picture>
-    
+        </div>
 
+        <div class="ContentBlock">
         <h3>3 Main Improvements</h3>
         <h4>01. More description, less unnecessary info</h4>
         <p>67% of participants did not know what is IBAN, PIN and the number on the history screens.
@@ -164,7 +219,7 @@
         <picture>
             <img class="img1" src="img/lumi/im3.png" alt="improvement3">
         </picture>
-    
+        </div>
 
         <!-- For the final part -->
         <div>

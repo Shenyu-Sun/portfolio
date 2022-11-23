@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talo</title>
+	<link rel="shortcut icon" type="image/png" href="img/fav/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e545878d21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+		<!-- For the navigation -->
+				<div class="navtoggle" id="myNavtoggle">
+				<nav>
+				<ul>
+			    <li><a href="index.html" class="navibutton"><h6>Project</h6></a></li>
+				<li><a href="about.html" class="navibutton"><h6>About</h6></a></li>
+				<li><a href="https://drive.google.com/file/d/1bIRHNskzOvIz8Q3-1Ew3O48NhiyVl22i/view?usp=sharing" target="_blank" class="navibutton"><h6>Résumé</h6></a></li>
+				<li>
+					<a href="javascript:void(0);">
+					<div class="hamburger" onclick="menuToggle()">
+						<span class="bar"> </span>
+						<span class="bar"> </span>
+						<span class="bar"> </span>
+					</div> 
+				    </a> 
+				</li>
+			    </ul>   
+			    </nav>               
+ 				</div>
+	</header>
+    <div id="projectContent">
+        <h2>Talo: A desktop application for team managers to allocate tasks efficiently.</h2>
+        <h5>00. Overview</h5>
+        <h3>An desktop for allocating task based on rules</h3>
+     
+        <p>- Talo is a desktop app aimed at helping team managers create rules to allocate incoming tasks based on the task type, team member’s skillset, and their current workload.</p>
+        <p>- This is a design challenge.</p>
+    
+        <h3>Design process</h3>
+        <ul>
+            <li>
+                Discovery: Team manager case analysis, Customer journey
+            </li>
+            <li>
+                Research: Competitive analysis, User flow
+            </li>
+            <li>
+                Design: UI flow, Sketch iteration
+            </li>
+            <li>
+                NEXT STEP: Prototyping & Usability testing, Hi fi prototype, Testing
+            </li>
+        </ul>
+
+        <!-- For the final part -->
+        <div>
+            <h3><a href="https://www.figma.com/proto/tjdIbeS7QHSufDcISGENEK/Talo?page-id=236%3A72&node-id=236%3A73&viewport=136%2C480%2C0.08&scaling=scale-down&starting-point-node-id=236%3A73"> <u>Prototype preview</u></a></h3>
+            </div>
+
+       <div class="ContentBlock">
+       <h5>01. Discovery</h5>
+       <h3>Team manager case analysis</h3>
+       
+            <h4>Team overview:</h4>
+        
+            <p> Each team member can have one or more skills (UX design, visual design, programming, UX research). If a team member is absent for the day, there needs to be a way to ensure that their tasks are still handled.
+            </p>
+            <h4>Goal:</h4> 
+            <p>Set rules for allocating the incoming tasks based on task type, team member’s skillset and their current workload.
+            </p>
+            <h4>Pain points:</h4>
+            <p> Not knowing the possible incoming tasks.<br>
+                Not knowing the skills of each member and their current workload.<br>
+                Have trouble reallocating the task when the team member is absent.
+            </p>
+        </div>    
+        
+        <h3>Define the problem</h3>
+        <p>Based on the pain points, I formed the research questions to better understand what are the problems that we are trying to solve. This questions also give me the direction to the following competitive analysis.
+        </p>
+        <p>1. How might we create a clear task overview where team manager can easily find the possible incoming tasks?
+        <br>
+            2. How might we create a intuitive database shows the team members current tasks and workload?
+         <br>  
+            3. How might we create a efficient allocation flow that helps manager set rules?</p>
+ 
+        <h3>Customer journey</h3>
+        <p>In order to gain inspiration and get familiar with task allocation desktop page, I made an competitive analysis on three task allocation apps. I focused on the two kinds of screens: Task overview, team members skillsets and workload overview.</p>
+        <picture>
+            <img class="img1" src="img/talo/CustomerJourneyMap.png" alt="CustomerJourneyMap">
+        </picture>
+
+        <div class="ContentBlock">
+        <h3>Competitive analysis</h3>
+        <p>In order to gain inspiration and get familiar with task allocation desktop page, I made an competitive analysis on three task allocation apps.
+
+            I focused on the two kinds of screens: Task overview, team members skillsets and workload overview.
+        </p>
+        <picture>
+            <img class="img1" src="img/talo/CompetitiveAnalysis.png" alt="CompetitiveAnalysis">
+        </picture>
+
+        <h4>Insights</h4>
+        
+            <p><b>Simple and intuitive interface</b> <br>
+                The interface doesn't need to be very cool, but it needs to be simple and easy to learn because team managers use it every day.
+            </p>
+            
+            <p><b>Great data visibility in dashboar</b> <br>
+                    Because tasks are usually related to time, task type, task workload, and task requirements, etc. Plain text can lead to team managers not getting key information. Combination of different views can be helpful.
+            </p>
+
+            <p><b>Easy located key information</b> <br>
+                Team managers may be faced with a very large number of tasks at one time. Filter, sort, tag and search function can be helpful for Locating the certain task and members quickly.
+            </p>
+        </div>
+
+        <h3>User flow</h3>
+        <p>In order to better understand the full journey of our user - team manager, I map this possible user flow to visualise the decision points and user actions.
+            
+            According to the customer journey, I split the flow into 2 small flows:
+            <br>
+            <b>Flow 1: Set allocation rules for new task </b><br>
+            <b>Flow 2: Reset allocation rules (when task member is absent)</b>
+        </p>   
+
+        <picture>
+            <img class="img1" src="img/talo/UserFlow.png" alt="UserFlow">
+        </picture>
+
+
+        <h5>03.Design</h5>
+        <h3>Sketch</h3>
+        <p>In order quickly document my ideas and draft my concept. I used paper and pen to make sketches to move forward. After 5 times iteration, I finally got all the interfaces done, then I move to Figma to create the prototype.
+        </p>
+        <picture>
+            <img class="img1" src="img/talo/SketchIteration.png" alt="SketchIteration">
+        </picture>
+
+        <h3>UI flow 1 - set allocation rules for new tasks</h3>
+        <picture>
+            <img class="img1" src="img/talo/UIflow1.1.png" alt="UIflow1">
+        </picture>
+
+        <h3>UI flow 2 - Reset allocation rules (when task member is absent)</h3>
+        <picture>
+            <img class="img1" src="img/talo/UIflow1.1.png" alt="UIflow2">
+        </picture>
+
+        <h5>Next Step</h5>
+        <h3>Flow for next step</h3>
+        <p>The testing is for finding what we can improve in the product, the design opportunities, users’ behaviour and their preference.
+            <br>
+            For the testing plan, I would like to use moderated usability testing. First we need to list the tasks that contain the features we want to test. Then we need to recruit potential users (team managers) as the participants for testing. After that, we can guide participants to complete the test. For example, we give user a scenario that the user need to allocate the task to team members.
+            </p>
+        <picture>
+            <img class="img1" src="img/talo/NextStep.png" alt="NextStep">
+        </picture>
+
+    </div>
+
+    <!-- For the footer  -->
+	<footer id="footer">
+		<div> <p class="texttag">Portfolio website 2.0<br/>@ Design and code by Shenyu Sun 2022 </p> </div>
+		<div> <p class="texttag">shenyu.sun@aalto.fi<br/> <a href="tel:+358466150251">+358 466150251 </a> </p> </div>
+		<div> <a href="https://www.linkedin.com/in/shenyu-sun" target="_blank"><p class="texttag">LinkedIn</p></a></div>
+	</footer>
+    
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
