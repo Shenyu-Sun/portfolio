@@ -169,7 +169,7 @@ footer{
   h5{
     font-size: 1em;
     font-weight: 400;
-    font-family: "inter";
+    
     text-transform: uppercase;
     color: #333333;
   }
@@ -177,7 +177,7 @@ footer{
   h6{
     font-size: 1em;
     font-weight: 400;
-    font-family: "inter";
+  
     margin-top: auto;
   }
 
